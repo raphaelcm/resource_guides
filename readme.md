@@ -2,7 +2,7 @@
 
 ## How to build this engine as a gem
 
-    cd vendor/engines/resource_guides
+    cd resource_guides
     gem build refinerycms-resource_guides.gemspec
     gem install refinerycms-resource_guides.gem
     
