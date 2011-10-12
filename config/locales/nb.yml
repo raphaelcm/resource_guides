@@ -1,0 +1,40 @@
+--- 
+nb: 
+  plugins: 
+    guide_authors: 
+      title: Guide Authors
+    resource_guides: 
+      title: Resource Guides
+  admin: 
+    guide_authors: 
+      actions: 
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Guide Authors"
+        create_new: Lag en ny Guide Author
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Guide Authors"
+      records: 
+        no_items_yet: "Det er ingen Guide Authors enda. Klikk p\xC3\xA5 \"Lag en ny Guide Author\" for \xC3\xA5 legge til din f\xC3\xB8rste guide author."
+        title: Guide Authors
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+      guide_author: 
+        edit: Rediger denne guide author
+        delete: Fjern denne guide author permanent
+        view_live_html: "Vis hvordan denne guide author ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+    resource_guides: 
+      actions: 
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Resource Guides"
+        create_new: Lag en ny Resource Guide
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Resource Guides"
+      resource_guide: 
+        edit: Rediger denne resource guide
+        delete: Fjern denne resource guide permanent
+        view_live_html: "Vis hvordan denne resource guide ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+      records: 
+        no_items_yet: "Det er ingen Resource Guides enda. Klikk p\xC3\xA5 \"Lag en ny Resource Guide\" for \xC3\xA5 legge til din f\xC3\xB8rste resource guide."
+        title: Resource Guides
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+  guide_authors: 
+    show: 
+      other: Andre Guide Authors
+  resource_guides: 
+    show: 
+      other: Andre Resource Guides

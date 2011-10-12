@@ -1,0 +1,44 @@
+--- 
+lolcat: 
+  plugins: 
+    guide_authors: 
+      title: Guide Authors
+    resource_guides: 
+      title: Resource Guides
+  admin: 
+    guide_authors: 
+      actions: 
+        reorder: REORDR Guide Authors
+        create_new: CREATE NEW Guide Author
+        reorder_done: DUN REORDERIN Guide Authors
+      records: 
+        no_items_yet: THAR R NO Guide Authors YET. CLICK "CREATE NEW Guide Author" 2 ADD UR FURST guide author.
+        title: Guide Authors
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+      guide_author: 
+        edit: EDIT DIS guide author
+        delete: REMOOV DIS guide author FOREVR
+        view_live_html: VIEW DIS guide author LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+    resource_guides: 
+      actions: 
+        reorder: REORDR Resource Guides
+        create_new: CREATE NEW Resource Guide
+        reorder_done: DUN REORDERIN Resource Guides
+      resource_guide: 
+        edit: EDIT DIS resource guide
+        delete: REMOOV DIS resource guide FOREVR
+        view_live_html: VIEW DIS resource guide LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+      records: 
+        no_items_yet: THAR R NO Resource Guides YET. CLICK "CREATE NEW Resource Guide" 2 ADD UR FURST resource guide.
+        title: Resource Guides
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+  shared: 
+    admin: 
+      image_picker: 
+        image: IMAGE
+  guide_authors: 
+    show: 
+      other: OTHR Guide Authors
+  resource_guides: 
+    show: 
+      other: OTHR Resource Guides

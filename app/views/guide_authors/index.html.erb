@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="guide_authors">
+    <% @guide_authors.each do |guide_author| %>
+      <li>
+        <%= link_to guide_author.name, guide_author_path(guide_author) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

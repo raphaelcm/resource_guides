@@ -1,0 +1,44 @@
+--- 
+fr: 
+  plugins: 
+    guide_authors: 
+      title: Guide Authors
+    resource_guides: 
+      title: Resource Guides
+  admin: 
+    guide_authors: 
+      actions: 
+        reorder: "R\xC3\xA9ordonner les Guide Authors"
+        create_new: "Cr\xC3\xA9er un(e) nouve(au/l/lle) Guide Author"
+        reorder_done: "Fin de r\xC3\xA9ordonnancement des Guide Authors"
+      records: 
+        no_items_yet: "Il n'y a actuellement aucun(e) Guide Author. Cliquer sur \"Cr\xC3\xA9er un(e) nouve(au/l/lle) Guide Author\" pour cr\xC3\xA9er votre premi(er/\xC3\xA8re) guide author."
+        title: Guide Authors
+        sorry_no_results: "D\xC3\xA9sol\xC3\xA9 ! Aucun r\xC3\xA9sultat."
+      guide_author: 
+        edit: Modifier ce(t/tte) guide author
+        delete: "Supprimer d\xC3\xA9finitivement ce(t/tte) guide author"
+        view_live_html: "Voir ce(t/tte) guide author <br/><em>(Ouvre une nouvelle fen\xC3\xAAtre)</em>"
+    resource_guides: 
+      actions: 
+        reorder: "R\xC3\xA9ordonner les Resource Guides"
+        create_new: "Cr\xC3\xA9er un(e) nouve(au/l/lle) Resource Guide"
+        reorder_done: "Fin de r\xC3\xA9ordonnancement des Resource Guides"
+      resource_guide: 
+        edit: Modifier ce(t/tte) resource guide
+        delete: "Supprimer d\xC3\xA9finitivement ce(t/tte) resource guide"
+        view_live_html: "Voir ce(t/tte) resource guide <br/><em>(Ouvre une nouvelle fen\xC3\xAAtre)</em>"
+      records: 
+        no_items_yet: "Il n'y a actuellement aucun(e) Resource Guide. Cliquer sur \"Cr\xC3\xA9er un(e) nouve(au/l/lle) Resource Guide\" pour cr\xC3\xA9er votre premi(er/\xC3\xA8re) resource guide."
+        title: Resource Guides
+        sorry_no_results: "D\xC3\xA9sol\xC3\xA9 ! Aucun r\xC3\xA9sultat."
+  shared: 
+    admin: 
+      image_picker: 
+        image: image
+  guide_authors: 
+    show: 
+      other: Autres Guide Authors
+  resource_guides: 
+    show: 
+      other: Autres Resource Guides

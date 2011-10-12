@@ -1,0 +1,3 @@
+- path = "pages/ttk/"
+- content_partial = path + "content" # content is the #show template
+= render(:partial => path + "show", :locals => {:content_partial => content_partial})

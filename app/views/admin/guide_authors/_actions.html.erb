@@ -1,0 +1,28 @@
+<ul>
+  <% if Admin::GuideAuthorsController.searchable? %>
+    <li>
+      <%= render :partial => "/shared/admin/search",
+                  :locals => {
+                    :url => admin_guide_authors_path
+                  } %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), new_admin_guide_author_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? and Admin::GuideAuthorsController.sortable? and GuideAuthor.count > 1 %>
+  <li>
+    <%= link_to t('.reorder', :what => "Guide Authors"),
+                 admin_guide_authors_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Guide Authors"),
+                 admin_guide_authors_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>
