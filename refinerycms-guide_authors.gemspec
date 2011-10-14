@@ -7,4 +7,7 @@ Gem::Specification.new do |s|
   s.summary           = 'Guide Authors engine for Refinery CMS'
   s.require_paths     = %w(lib)
   s.files             = Dir['lib/**/*', 'config/**/*', 'app/**/*']
+  s.authors     = ['Raphael Crawford-Marks']
+  s.email       = 'raphael@internmatch.com'
+  s.homepage    = 'http://internmatch.com'
 end
