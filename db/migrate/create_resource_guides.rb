@@ -5,7 +5,6 @@ class CreateResourceGuides < ActiveRecord::Migration
       t.string :title
       t.text :body
       t.integer :link_image_id
-      t.string :tags
       t.string :custom_url
       t.string :audience_type
       t.integer :position
