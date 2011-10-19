@@ -4,7 +4,7 @@ class ResourceGuide < ActiveRecord::Base
   named_scope :previous,       lambda { |att| {:conditions => ["id < ?", att]} }
   named_scope :next,           lambda { |att| {:conditions => ["id > ?", att]} }
 
-  acts_as_indexed :fields => [:title, :body, :tags, :custom_url, :audience_type]
+  acts_as_indexed :fields => [:title, :body, :custom_url, :audience_type]
 
   has_friendly_id :title_or_custom, :use_slug => true
 
