@@ -1,0 +1,28 @@
+<ul>
+  <% if Admin::GuideCategoriesController.searchable? %>
+    <li>
+      <%= render :partial => "/shared/admin/search",
+                  :locals => {
+                    :url => admin_guide_categories_path
+                  } %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), new_admin_guide_category_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? and Admin::GuideCategoriesController.sortable? and GuideCategory.count > 1 %>
+  <li>
+    <%= link_to t('.reorder', :what => "Guide Categories"),
+                 admin_guide_categories_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Guide Categories"),
+                 admin_guide_categories_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

@@ -1,7 +1,15 @@
 require 'refinerycms-base'
 
 module Refinery
-  module ResourceGuides
+  module GuideCategories
+
+    class << self
+      attr_accessor :root
+      def root
+        @root ||= Pathname.new(File.expand_path('../../', __FILE__))
+      end
+    end
+
     class Engine < Rails::Engine
       initializer "static assets" do |app|
         app.middleware.insert_after ::ActionDispatch::Static, ::ActionDispatch::Static, "#{root}/public"
@@ -9,14 +17,14 @@ module Refinery
 
       config.after_initialize do
         Refinery::Plugin.register do |plugin|
-          plugin.name = "resource_guides"
+          plugin.name = "guide_categories"
+          plugin.pathname = root
           plugin.activity = {
-            :class => ResourceGuide
+            :class => GuideCategory,
+            :title => 'name'
           }
         end
       end
     end
   end
 end
-require File.expand_path('../refinerycms-guide_authors', __FILE__)
-require File.expand_path('../refinerycms-guide_categories', __FILE__)

@@ -45,6 +45,11 @@
   </div>
   
   <div class='field'>
+    <%= f.label :category %>
+    <%= f.collection_select(:category_id, GuideCategory.all, :id, :name) %>
+  </div>
+  
+  <div class='field'>
     <%= f.label :use_custom_url %>
     <%= f.check_box :use_custom_url %>
   </div>

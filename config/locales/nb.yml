@@ -1,19 +1,37 @@
 --- 
 nb: 
   plugins: 
+    guide_categories: 
+      title: Guide Categories
     guide_authors: 
       title: Guide Authors
     resource_guides: 
       title: Resource Guides
+  guide_categories: 
+    show: 
+      other: Andre Guide Categories
   admin: 
+    guide_categories: 
+      actions: 
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Guide Categories"
+        create_new: Lag en ny Guide Category
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Guide Categories"
+      guide_category: 
+        edit: Rediger denne guide category
+        delete: Fjern denne guide category permanent
+        view_live_html: "Vis hvordan denne guide category ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+      records: 
+        no_items_yet: "Det er ingen Guide Categories enda. Klikk p\xC3\xA5 \"Lag en ny Guide Category\" for \xC3\xA5 legge til din f\xC3\xB8rste guide category."
+        title: Guide Categories
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
     guide_authors: 
       actions: 
         reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Guide Authors"
         create_new: Lag en ny Guide Author
         reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Guide Authors"
       records: 
-        no_items_yet: "Det er ingen Guide Authors enda. Klikk p\xC3\xA5 \"Lag en ny Guide Author\" for \xC3\xA5 legge til din f\xC3\xB8rste guide author."
         title: Guide Authors
+        no_items_yet: "Det er ingen Guide Authors enda. Klikk p\xC3\xA5 \"Lag en ny Guide Author\" for \xC3\xA5 legge til din f\xC3\xB8rste guide author."
         sorry_no_results: Beklager! Vi fant ikke noen resultater.
       guide_author: 
         edit: Rediger denne guide author
@@ -29,8 +47,8 @@ nb:
         delete: Fjern denne resource guide permanent
         view_live_html: "Vis hvordan denne resource guide ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
       records: 
-        no_items_yet: "Det er ingen Resource Guides enda. Klikk p\xC3\xA5 \"Lag en ny Resource Guide\" for \xC3\xA5 legge til din f\xC3\xB8rste resource guide."
         title: Resource Guides
+        no_items_yet: "Det er ingen Resource Guides enda. Klikk p\xC3\xA5 \"Lag en ny Resource Guide\" for \xC3\xA5 legge til din f\xC3\xB8rste resource guide."
         sorry_no_results: Beklager! Vi fant ikke noen resultater.
   guide_authors: 
     show: 

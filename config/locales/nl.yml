@@ -1,19 +1,37 @@
 --- 
 nl: 
   plugins: 
+    guide_categories: 
+      title: Guide Categories
     guide_authors: 
       title: Guide Authors
     resource_guides: 
       title: Resource Guides
+  guide_categories: 
+    show: 
+      other: Andere Guide Categories
   admin: 
+    guide_categories: 
+      actions: 
+        reorder: Wijzig de volgorde van de Guide Categories
+        create_new: Maak een nieuwe Guide Category
+        reorder_done: Klaar met het wijzingen van de volgorde van de Guide Categories
+      guide_category: 
+        edit: Bewerk deze guide category
+        delete: Verwijder deze guide category voor eeuwig
+        view_live_html: Bekijk deze guide category op de website <br/><em>(opent een nieuw venster)</em>
+      records: 
+        no_items_yet: Er zijn nog geen Guide Categories. Druk op 'Maak een nieuwe Guide Category' om de eerste aan te maken.
+        title: Guide Categories
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
     guide_authors: 
       actions: 
         reorder: Wijzig de volgorde van de Guide Authors
         create_new: Maak een nieuwe Guide Author
         reorder_done: Klaar met het wijzingen van de volgorde van de Guide Authors
       records: 
-        no_items_yet: Er zijn nog geen Guide Authors. Druk op 'Maak een nieuwe Guide Author' om de eerste aan te maken.
         title: Guide Authors
+        no_items_yet: Er zijn nog geen Guide Authors. Druk op 'Maak een nieuwe Guide Author' om de eerste aan te maken.
         sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
       guide_author: 
         edit: Bewerk deze guide author
@@ -29,8 +47,8 @@ nl:
         delete: Verwijder deze resource guide voor eeuwig
         view_live_html: Bekijk deze resource guide op de website <br/><em>(opent een nieuw venster)</em>
       records: 
-        no_items_yet: Er zijn nog geen Resource Guides. Druk op 'Maak een nieuwe Resource Guide' om de eerste aan te maken.
         title: Resource Guides
+        no_items_yet: Er zijn nog geen Resource Guides. Druk op 'Maak een nieuwe Resource Guide' om de eerste aan te maken.
         sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
   guide_authors: 
     show: 

@@ -1,19 +1,37 @@
 --- 
 en: 
   plugins: 
+    guide_categories: 
+      title: Guide Categories
     guide_authors: 
       title: Guide Authors
     resource_guides: 
       title: Resource Guides
+  guide_categories: 
+    show: 
+      other: Other Guide Categories
   admin: 
+    guide_categories: 
+      actions: 
+        reorder: Reorder Guide Categories
+        create_new: Add New Guide Category
+        reorder_done: Done Reordering Guide Categories
+      guide_category: 
+        edit: Edit this guide category
+        delete: Remove this guide category forever
+        view_live_html: View this guide category live <br/><em>(opens in a new window)</em>
+      records: 
+        no_items_yet: There are no Guide Categories yet. Click "Add New Guide Category" to add your first guide category.
+        title: Guide Categories
+        sorry_no_results: Sorry! There are no results found.
     guide_authors: 
       actions: 
         reorder: Reorder Guide Authors
         create_new: Add New Guide Author
         reorder_done: Done Reordering Guide Authors
       records: 
-        no_items_yet: There are no Guide Authors yet. Click "Add New Guide Author" to add your first guide author.
         title: Guide Authors
+        no_items_yet: There are no Guide Authors yet. Click "Add New Guide Author" to add your first guide author.
         sorry_no_results: Sorry! There are no results found.
       guide_author: 
         edit: Edit this guide author
@@ -29,16 +47,16 @@ en:
         delete: Remove this resource guide forever
         view_live_html: View this resource guide live <br/><em>(opens in a new window)</em>
       records: 
-        no_items_yet: There are no Resource Guides yet. Click "Add New Resource Guide" to add your first resource guide.
         title: Resource Guides
+        no_items_yet: There are no Resource Guides yet. Click "Add New Resource Guide" to add your first resource guide.
         sorry_no_results: Sorry! There are no results found.
+  guide_authors: 
+    show: 
+      other: Other Guide Authors
   shared: 
     admin: 
       image_picker: 
         image: image
-  guide_authors: 
-    show: 
-      other: Other Guide Authors
   resource_guides: 
     show: 
       other: Other Resource Guides

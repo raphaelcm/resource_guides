@@ -13,6 +13,11 @@ module NavigationHelpers
 
          when /the new guide_author form/
           new_admin_guide_author_path
+        when /the list of guide_categories/
+          admin_guide_categories_path
+
+         when /the new guide_category form/
+          new_admin_guide_category_path
         else
           nil
         end

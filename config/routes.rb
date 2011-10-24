@@ -17,4 +17,13 @@
       end
     end
   end
+  resources :guide_categories, :only => [:index, :show]
+
+  scope(:path => 'refinery', :as => 'admin', :module => 'admin') do
+    resources :guide_categories, :except => :show do
+      collection do
+        post :update_positions
+      end
+    end
+  end
 end

@@ -1,19 +1,37 @@
 --- 
 lolcat: 
   plugins: 
+    guide_categories: 
+      title: Guide Categories
     guide_authors: 
       title: Guide Authors
     resource_guides: 
       title: Resource Guides
+  guide_categories: 
+    show: 
+      other: OTHR Guide Categories
   admin: 
+    guide_categories: 
+      actions: 
+        reorder: REORDR Guide Categories
+        create_new: CREATE NEW Guide Category
+        reorder_done: DUN REORDERIN Guide Categories
+      guide_category: 
+        edit: EDIT DIS guide category
+        delete: REMOOV DIS guide category FOREVR
+        view_live_html: VIEW DIS guide category LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+      records: 
+        no_items_yet: THAR R NO Guide Categories YET. CLICK "CREATE NEW Guide Category" 2 ADD UR FURST guide category.
+        title: Guide Categories
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
     guide_authors: 
       actions: 
         reorder: REORDR Guide Authors
         create_new: CREATE NEW Guide Author
         reorder_done: DUN REORDERIN Guide Authors
       records: 
-        no_items_yet: THAR R NO Guide Authors YET. CLICK "CREATE NEW Guide Author" 2 ADD UR FURST guide author.
         title: Guide Authors
+        no_items_yet: THAR R NO Guide Authors YET. CLICK "CREATE NEW Guide Author" 2 ADD UR FURST guide author.
         sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
       guide_author: 
         edit: EDIT DIS guide author
@@ -29,16 +47,16 @@ lolcat:
         delete: REMOOV DIS resource guide FOREVR
         view_live_html: VIEW DIS resource guide LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
       records: 
-        no_items_yet: THAR R NO Resource Guides YET. CLICK "CREATE NEW Resource Guide" 2 ADD UR FURST resource guide.
         title: Resource Guides
+        no_items_yet: THAR R NO Resource Guides YET. CLICK "CREATE NEW Resource Guide" 2 ADD UR FURST resource guide.
         sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+  guide_authors: 
+    show: 
+      other: OTHR Guide Authors
   shared: 
     admin: 
       image_picker: 
         image: IMAGE
-  guide_authors: 
-    show: 
-      other: OTHR Guide Authors
   resource_guides: 
     show: 
       other: OTHR Resource Guides
