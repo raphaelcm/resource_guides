@@ -6,7 +6,7 @@ class GuideAuthorsController < ApplicationController
   def index
     # you can use meta fields from your model instead (e.g. browser_title)
     # by swapping @page for @guide_author in the line below:
-    present(@page)
+    present(@guide_author)
   end
 
   def show
@@ -14,7 +14,7 @@ class GuideAuthorsController < ApplicationController
 
     # you can use meta fields from your model instead (e.g. browser_title)
     # by swapping @page for @guide_author in the line below:
-    present(@page)
+    present(@guide_author)
   end
 
 protected

@@ -4,4 +4,5 @@ class GuideCategory < ActiveRecord::Base
 
   validates :name, :presence => true, :uniqueness => true
   
+  has_many :resource_guides
 end

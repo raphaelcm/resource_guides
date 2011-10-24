@@ -40,13 +40,13 @@
   </div>
   
   <div class='field'>
-    <%= f.label :author %>
-    <%= f.collection_select(:author_id, GuideAuthor.all, :id, :name) %>
+    <%= f.label :guide_author %>
+    <%= f.collection_select(:guide_author_id, GuideAuthor.all, :id, :name) %>
   </div>
   
   <div class='field'>
-    <%= f.label :category %>
-    <%= f.collection_select(:category_id, GuideCategory.all, :id, :name) %>
+    <%= f.label :guide_category %>
+    <%= f.collection_select(:guide_category_id, GuideCategory.all, :id, :name) %>
   </div>
   
   <div class='field'>

@@ -11,8 +11,8 @@ class ResourceGuide < ActiveRecord::Base
   validates :title, :presence => true, :uniqueness => true
   
   belongs_to :link_image, :class_name => 'Image'
-  belongs_to :author, :class_name => 'GuideAuthor'
-  belongs_to :category, :class_name => 'GuideCategory'
+  belongs_to :guide_author, :class_name => 'GuideAuthor'
+  belongs_to :guide_category, :class_name => 'GuideCategory'
   
   def employer_resource?
     audience_type =~ /employers/i
