@@ -1,9 +1,5 @@
 class ResourceGuide < ActiveRecord::Base
 
-  named_scope :same_audience_type,  lambda { |att| {:conditions => ["audience_type = ?", att]} }
-  named_scope :previous,       lambda { |att| {:conditions => ["id < ?", att]} }
-  named_scope :next,           lambda { |att| {:conditions => ["id > ?", att]} }
-
   acts_as_indexed :fields => [:title, :body, :custom_url, :audience_type]
 
   has_friendly_id :title_or_custom, :use_slug => true
@@ -13,6 +9,19 @@ class ResourceGuide < ActiveRecord::Base
   belongs_to :link_image, :class_name => 'Image'
   belongs_to :guide_author, :class_name => 'GuideAuthor'
   belongs_to :guide_category, :class_name => 'GuideCategory'
+  
+  #
+  # Scopes
+  #
+  #scope :for_audience,  lambda { |a| {:conditions => ["audience_type = ?", a]} }
+  scope :for_audience,  lambda { |a| where(:audience_type => a) }
+  scope :featured, where(:featured => true)
+  scope :latest, order("created_at desc")
+  scope :category, lambda { |c| where(:guide_category => c) }
+  
+  def audience
+    audience_type
+  end
   
   def employer_resource?
     audience_type =~ /employers/i

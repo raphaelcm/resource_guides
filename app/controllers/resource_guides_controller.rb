@@ -1,8 +1,20 @@
 class ResourceGuidesController < ApplicationController
 
-  before_filter :find_all_resource_guides
+  #before_filter :find_all_resource_guides
   before_filter :find_page
 
+  def index_employer
+    @audience = :employers
+    @resource_guides = ResourceGuide.for_audience(@audience.to_s)
+    render "resource_guides/index"
+  end
+  
+  def index_student
+    @audience = :students
+    @resource_guides = ResourceGuide.for_audience(@audience.to_s)
+    render "resource_guides/index"
+  end
+  
   def index
     # you can use meta fields from your model instead (e.g. browser_title)
     # by swapping @page for @resource_guide in the line below:
@@ -11,12 +23,11 @@ class ResourceGuidesController < ApplicationController
 
   def show
     @resource_guide = ResourceGuide.find(params[:id])
-    @same_audience = ResourceGuide.same_audience_type(@resource_guide.audience_type)
-    @next = @same_audience.next(@resource_guide.id).first
-    @prev = @same_audience.previous(@resource_guide.id).first
+    @audience = @resource_guide.audience.to_sym
+    
     # you can use meta fields from your model instead (e.g. browser_title)
     # by swapping @page for @resource_guide in the line below:
-    present(@resource_guide)
+    #present(@resource_guide)
   end
 
 protected
