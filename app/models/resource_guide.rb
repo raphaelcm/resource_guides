@@ -13,7 +13,6 @@ class ResourceGuide < ActiveRecord::Base
   #
   # Scopes
   #
-  #scope :for_audience,  lambda { |a| {:conditions => ["audience_type = ?", a]} }
   scope :for_audience,  lambda { |a| where(:audience_type => a) }
   scope :featured, where(:featured => true)
   scope :latest, order("created_at desc")
