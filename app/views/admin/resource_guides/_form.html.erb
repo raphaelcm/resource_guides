@@ -62,7 +62,7 @@
   <div class='field'>
     <%= f.label :audience_type -%>
     <select name="resource_guide[audience_type]">
-      <% audience_types.each do |type| # iterate through audience_types provided by pages_helper %>
+      <% ['employers', 'students'].each do |type| # iterate through audience_types provided by pages_helper %>
         <option value="<%= type %>" <% if type==@resource_guide.audience_type %>selected<% end %> ><%= type.capitalize%></option>
       <% end %>
     </select>
