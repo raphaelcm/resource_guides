@@ -8,7 +8,12 @@
     <%= f.label :name -%>
     <%= f.text_field :name, :class => 'larger widest'  -%>
   </div>
-  
+
+  <div class='field'>
+    <%= f.label :rank -%>
+    <%= f.text_field :rank -%>
+  </div>
+
   <%= render :partial => "/shared/admin/form_actions",
               :locals => {
                 :f => f,
