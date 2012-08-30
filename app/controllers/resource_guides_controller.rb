@@ -1,4 +1,6 @@
 class ResourceGuidesController < ApplicationController
+  include ControllerNavigation 
+  main_navigation :guides
 
   #before_filter :find_all_resource_guides
   before_filter :find_page
